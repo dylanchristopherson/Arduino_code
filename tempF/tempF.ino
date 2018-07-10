@@ -1,5 +1,7 @@
 #include <Adafruit_CircuitPlayground.h>
 
+float temp;
+
 void setup() {
   // put your setup code here, to run once:
   CircuitPlayground.begin();
@@ -7,8 +9,8 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  float=temperatureF();
+  temp=CircuitPlayground.temperatureF();
 
   Serial.println("The temperature is: ");
-  Serial.println(float);
+  Serial.println(temp);
 }
